@@ -33,7 +33,7 @@ def rps():
 
         if player == 4:
             print("Thanks for playing.!!!")
-            exit()
+            sys.exit()
 
         computerchoice = random.choice("123")
 
@@ -68,9 +68,9 @@ def rps():
 
         nonlocal game_count
         game_count+=1
-        print(f"\n  Game count: {str(game_count)}")
-        print(f"\n 🧑‍🦱 Player Wins: {str(player_wins)}")
-        print(f"\n 🐍 Python Wins: {str(python_wins)}")
+        print(f"\n  Game count: {game_count}")
+        print(f"\n 🧑‍🦱 Player Wins: {player_wins}")
+        print(f"\n 🐍 Python Wins: {python_wins}")
 
         while True:
             
@@ -86,9 +86,11 @@ def rps():
         else:
             print()
             print("Thanks for playing!!!!")
-            exit()
+            sys.exit()
 
     return play_rps
 
-play=rps()
-play()
+rock_paper_scissors=rps()
+
+if __name__ == "__main__":
+    rock_paper_scissors()
