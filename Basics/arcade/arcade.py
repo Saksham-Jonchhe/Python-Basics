@@ -4,7 +4,7 @@ from rps import rps
 from guessnumber import guess
 
 
-def play_arcade(name="PlayerOne"):
+def play_arcade(name):
     welcomeback=False
     print("Welcome to the arcade!!!!\n")
     while True:
