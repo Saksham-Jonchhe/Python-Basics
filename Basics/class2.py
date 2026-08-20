@@ -32,6 +32,8 @@ class student(person):
         self.lastname=lname
         self.graduationyear=year
         #person.__init__(self,fname,lname)
+
+
 y=student("Skasham","jonchhe",2020)
 y.printname()
 
