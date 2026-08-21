@@ -29,12 +29,11 @@ class Match:
         self.teams=teamname
 
     def schedule(self):
-        print("Schedule:\n")
-        for match in self.matches:
-            self.matches=self.teams
+        
+        self.matches=self.teams
 
     def showmatches(self):
         print(f"{self.matches[0].teamname}vs{self.matches[1].teamname} ")
-        print(f"{self.matches[0].teamname}vs{self.matches[1].teamname} ")
-        print(f"{self.matches[0].teamname}vs{self.matches[1].teamname} ")
+        # print(f"{self.matches[0].teamname}vs{self.matches[1].teamname} ")
+        # print(f"{self.matches[0].teamname}vs{self.matches[1].teamname} ")
         print()
