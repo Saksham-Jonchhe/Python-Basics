@@ -1,0 +1,27 @@
+from cricket import *
+
+p1=Player("Saksham","Batsman",21)
+p2=Player("Unish","Bowler",20)
+p3=Player("Biraj","All-Rounder",22)
+
+p4=Player("Pramit","Bowler",22)
+p5=Player("Chris","Batsman",20)
+p6=Player("Razz","Spin Bowler",21)
+t1=Teams("Atlas Gladiators")
+t2=Teams("KTM Kings")
+t3=Teams("ABC Tigers")
+# Warriors.players.append(p1)
+t1.add_players(p1,p2,p3)
+t1.showteam()
+print("")
+t2.add_players(p4,p5,p6)
+t2.showteam()
+
+print("")
+m1=Match(t2,t1)
+m2=Match(t3,t2)
+m3=Match(t1,t3)
+m1.schedule()
+m1.showmatches()
+m2.schedule()
+m2.showmatches()
