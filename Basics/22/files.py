@@ -1,6 +1,13 @@
+import os
+
+print(os.getcwd())
 #r=read
+
 #a=append
 #w=WRite
 #=Create
+ 
+# Read-error if it doesn't exist
 
-#Read-error if ti doesn't cretae
+f = open("names.txt")
+print(f.read()) 
