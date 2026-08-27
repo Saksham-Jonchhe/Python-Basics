@@ -7,4 +7,4 @@ count=0
 while numbers!=0:
         numbers=numbers//10
         count+=1
-print(count)    
+print(f"Total digits are:{count}")    
